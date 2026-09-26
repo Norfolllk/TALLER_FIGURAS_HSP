@@ -26,12 +26,7 @@ public class Figura {
         this.color = color;
     }
     
-    public class Graficador {
-        public void graficar(Figura figura) {
-            System.out.println("Graficando " + figura.getNombre().toUpperCase()
-                    + " de color " + figura.getColor().toUpperCase());
-        }
-    }
+    
 
     @Override
     public String toString() {
