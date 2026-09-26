@@ -1,7 +1,16 @@
 package com.krakedev.figuras;
 
 public class Rectangulo extends Figura {
-    public Rectangulo(String nombre, String color) {
+    private double base;
+    private double altura;
+
+    public Rectangulo(String nombre, String color, double base, double altura) {
         super(nombre, color);
+        this.base = base;
+        this.altura = altura;
+    }
+
+    public double calcularPerimetro() {
+        return 2 * base + 2 * altura;
     }
 }
